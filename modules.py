@@ -1,6 +1,13 @@
 #alias => as 
-from math import topla as toplamaIslemi0
-import random
+#import math #bütün math modulunu alır
+from math import sqrt as karekok #mat kütüphanesinden sadece sqrt'u al
+from oop import Truck # type: ignore
+import requests
 
-print(random.randint(0,100))
-print(math.topla(10,20))
+print(karekok(8))
+
+truck2 = Truck("Scania",1000)
+truck2.start
+
+response = requests.get("https://google.com")
+print(response.status_code)
