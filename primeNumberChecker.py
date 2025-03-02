@@ -1,5 +1,4 @@
-def primeNumber():
-    number = int(input("Enter a number:"))
+def primeNumber(number):
     if number > 1:
         is_prime = True
         for i in range(2,number):
@@ -14,4 +13,4 @@ def primeNumber():
         print(f"{number} is not a prime number.")
 
 if __name__ == '__main__':
-    primeNumber()
+    primeNumber(7)
